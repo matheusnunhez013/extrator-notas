@@ -1,0 +1,5 @@
+FATURA Nº 000123
+Empresa Demonstração Comércio ME   CNPJ 11222333000181
+Emitida em 2026-02-14
+Itens: 3x Peça genérica A (fictícia)
+Total a pagar: R$ 389,90

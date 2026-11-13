@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: notas
+      POSTGRES_PASSWORD: notas
+      POSTGRES_DB: notas
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U notas"]
+      interval: 3s
+      retries: 10
+    volumes:
+      - dados:/var/lib/postgresql/data
+
+  api:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://notas:notas@db:5432/notas
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  dados:

@@ -1,0 +1,9 @@
+NOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e
+Prestador: Oficina Exemplo Serviços Ltda
+CNPJ: 11.222.333/0001-81
+Tomador: Cliente Fictício da Silva
+Data de emissão: 05/03/2026
+Descrição: Manutenção preventiva de equipamento (dados fictícios)
+Valor dos serviços: R$ 1.250,00
+ISS (5%): R$ 62,50
+VALOR TOTAL DA NOTA: R$ 1.250,00
